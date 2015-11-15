@@ -303,7 +303,7 @@ public class HttpRequest extends Builder {
         List<NameValuePair> l = new ArrayList<NameValuePair>();
         for (Map.Entry<String, String> entry : build.getBuildVariables().entrySet()) {
             String value = evaluate(entry.getValue(), vars, envVars);
-            logger.println("  " + entry.getKey() + " = " + value);
+            logger.println("  " + entry.getKey() + " : " + value);
 
             l.add(new NameValuePair(entry.getKey(), value));
         }
