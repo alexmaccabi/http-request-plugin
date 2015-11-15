@@ -180,7 +180,6 @@ public class HttpRequest extends Builder {
         defineDefaultConfigurations();
 
         final PrintStream logger = listener.getLogger();
-        logger.println("HttpMode: " + httpMode);
 
 
         final EnvVars envVars = build.getEnvironment(listener);
