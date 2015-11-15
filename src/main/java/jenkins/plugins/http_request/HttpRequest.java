@@ -295,7 +295,7 @@ public class HttpRequest extends Builder {
             return Collections.emptyList();
         }
         if (!envVars.isEmpty()) {
-            logger.println("Parameters: ");
+            logger.println("");
         }
 
         final VariableResolver<String> vars = build.getBuildVariableResolver();
